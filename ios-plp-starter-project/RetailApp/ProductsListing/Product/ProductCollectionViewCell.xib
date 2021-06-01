@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="RetailApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="u1I-uG-di2">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="181.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-M5-qT8">
+                        <rect key="frame" x="0.0" y="189.5" width="356" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-h2-oEI">
+                        <rect key="frame" x="0.0" y="242" width="356" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LDQ-Ad-vSG">
+                        <rect key="frame" x="272" y="8" width="76" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="nYK-tY-faj"/>
+                            <constraint firstAttribute="width" constant="76" id="xQw-MJ-v7P"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ku4-h2-oEI" firstAttribute="leading" secondItem="fRo-M5-qT8" secondAttribute="leading" id="13I-eF-5W9"/>
+                <constraint firstItem="fRo-M5-qT8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2uS-CI-8DM"/>
+                <constraint firstItem="ku4-h2-oEI" firstAttribute="top" secondItem="fRo-M5-qT8" secondAttribute="bottom" priority="748" constant="32" id="7lh-OB-hhd"/>
+                <constraint firstItem="u1I-uG-di2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ila-3g-bch"/>
+                <constraint firstAttribute="trailing" secondItem="fRo-M5-qT8" secondAttribute="trailing" id="Lbl-1s-Jbm"/>
+                <constraint firstItem="fRo-M5-qT8" firstAttribute="top" secondItem="u1I-uG-di2" secondAttribute="bottom" constant="8" id="LdO-AW-s6A"/>
+                <constraint firstAttribute="trailing" secondItem="u1I-uG-di2" secondAttribute="trailing" id="PEX-6m-yau"/>
+                <constraint firstItem="ku4-h2-oEI" firstAttribute="trailing" secondItem="fRo-M5-qT8" secondAttribute="trailing" id="PSg-Md-tPm"/>
+                <constraint firstItem="u1I-uG-di2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RSE-5N-wlt"/>
+                <constraint firstAttribute="bottom" secondItem="ku4-h2-oEI" secondAttribute="bottom" id="i8o-Mf-Tqh"/>
+                <constraint firstItem="LDQ-Ad-vSG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="jaW-sN-u9L"/>
+                <constraint firstItem="ku4-h2-oEI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fRo-M5-qT8" secondAttribute="bottom" constant="8" id="wUk-Bs-O58"/>
+                <constraint firstAttribute="trailing" secondItem="LDQ-Ad-vSG" secondAttribute="trailing" constant="8" id="zqi-DT-Ftu"/>
+            </constraints>
+            <size key="customSize" width="356" height="263"/>
+            <connections>
+                <outlet property="badgeImageView" destination="LDQ-Ad-vSG" id="31f-Qc-ge7"/>
+                <outlet property="imageView" destination="u1I-uG-di2" id="asA-x7-BVh"/>
+                <outlet property="nameLabel" destination="fRo-M5-qT8" id="ujU-MD-Bkz"/>
+                <outlet property="priceLabel" destination="ku4-h2-oEI" id="gBT-kc-CP2"/>
+            </connections>
+            <point key="canvasLocation" x="359.4202898550725" y="224.66517857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
